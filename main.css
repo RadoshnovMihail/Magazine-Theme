@@ -64,14 +64,14 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     padding-block: 35px;
     border-bottom: 1px solid var(--color-black);
 }
 
 .header-menu-list{
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     /* max-width: 429px; */
     gap: 35px;
     margin: 0;
@@ -92,7 +92,7 @@ body{
 
 .header-henric-link{
 position: relative;
-font-size: clamp(16px, 0.98vw 19px);
+font-size: 19px;
 line-height: 1.52;
 text-transform: uppercase;
 margin-left: 22px;
@@ -110,7 +110,7 @@ margin-left: 22px;
 
 .header-info-link{
 position: relative;
-font-size: clamp(16px, 0.98vw 19px);
+font-size: 19px;
 line-height: 1.31;
 text-transform: uppercase;
 margin-right: 22px;
@@ -125,5 +125,3 @@ margin-right: 22px;
    
 }
 
-@media(max-width:680px){
-}
