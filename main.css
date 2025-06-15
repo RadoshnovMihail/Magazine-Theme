@@ -64,6 +64,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
     /* flex-wrap: wrap; */
     padding-block: 35px;
     border-bottom: 1px solid var(--color-black);
@@ -71,14 +72,14 @@ body{
 
 .header-menu-list{
     display: flex;
-    /* flex-wrap: wrap; */
-    /* max-width: 429px; */
+    flex-wrap: wrap;
     gap: 35px;
     margin: 0;
+    padding-inline: 15px;
 }
 
 .header-menu-link{
-    font-size: clamp(13px 0.83vw, 15px);
+    font-size: 0.9375rem;
     text-transform: uppercase;
     letter-spacing: -0.3px;
     line-height: 1.73;
@@ -92,36 +93,37 @@ body{
 
 .header-henric-link{
 position: relative;
-font-size: 19px;
+font-size: 1.1875rem;
 line-height: 1.52;
 text-transform: uppercase;
 margin-left: 22px;
 }
 
 .header-henric-link::before{
-    content: "";
-    display: block;
+    content: url(./icon/romb.svg);
     position: absolute;
-    background: url('./icon/romb.svg') center/contain no-repeat;
+    /* display: block;  */
+    /* background: url('./icon/romb.svg') center/contain no-repeat;
     width: 25px;
     height: 28px;
-    right: 73px;
+    right: 73px; */
+    right: calc(100% + 7px);
+    top: -3px;
 }
 
 .header-info-link{
 position: relative;
-font-size: 19px;
+font-size: 1.1875rem;
 line-height: 1.31;
 text-transform: uppercase;
 margin-right: 22px;
 }
 
 .header-info-link::after{
-    content: "";
+    content: url('./icon/circle.svg');
     position: absolute;
-    background: url('./icon/circle.svg') center/contain no-repeat;
-    width: 26px;
-    aspect-ratio: 1;
+    left: calc(100% + 7px);
+    top: -3px;
    
 }
 
