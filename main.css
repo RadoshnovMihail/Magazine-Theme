@@ -330,16 +330,17 @@ body {
 
 .posts-gallery-inner{
   display: grid;
-  grid-template-columns: 845.92px 402.95px 402.95px;
-  grid-template-rows: repeat(3 auto); 
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 40px;
 }
 
-.two-books{
-  grid-column-start: 1;
-  grid-column-start: 3; 
+.posts-gallery-item:not(:last-child){
+  margin-bottom: 65px;
 }
 
-.cactus{
-  grid-column-start: 3;
-  grid-column-start: 5;
+.posts-gallery{
+  padding-bottom: 7.5625em;
+  border-bottom: 1px solid var(--color-black);
+  
 }
+
