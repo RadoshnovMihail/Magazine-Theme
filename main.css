@@ -322,6 +322,10 @@ body {
   display: inline-block;
 }
 
+.posts-gallery-title:hover{
+  cursor: pointer;
+}
+
 .posts-gallery-size{
   font-size: 1.5rem;
   line-height: 1.333;
@@ -344,3 +348,38 @@ body {
   
 }
 
+.popular{
+padding: 7.0625em 0 8.8125em;
+display: flex;
+justify-content: space-between;
+}
+
+.popular-title{
+  position: relative;
+  font-size: 1.1875em;
+  line-height: 1;
+  letter-spacing: -0.36px;
+  text-transform: uppercase;
+  color: var(--color-black);
+}
+
+.popular-main-title::before{
+  content: "";
+  position: absolute;
+  background-image: url('./icon/popular-icon.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 19px;
+  aspect-ratio: 1;
+  right:calc(100% + 7px);
+  top: -1px;
+}
+
+.popular-item-info{
+  display: flex;
+  align-items: baseline;
+  font-size: 0.6875rem;
+  line-height: 1;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+}
